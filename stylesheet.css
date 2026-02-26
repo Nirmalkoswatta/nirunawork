@@ -117,6 +117,57 @@ body {
   box-shadow: 0 0 10px rgba(110, 231, 183, 0.3);
 }
 
+/* Modern Navbar Styling */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black !important;
+  /* Force text color to black */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+nav ul li a.active {
+  background-color: #0056b3;
+  color: white;
+}
+
 /*  Main Layout */
 .main-container {
   display: flex;
@@ -325,6 +376,16 @@ body {
   border: 4px solid var(--tertiary-color);
   box-shadow: 0 4px 12px var(--shadow-hover);
   margin-top: -20px;
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 /* Info Row */

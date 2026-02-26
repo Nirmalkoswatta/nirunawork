@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <h1>Portfolio</h1>
             <ul>
                 <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -23,7 +22,8 @@
 
     <main>
         <section class="intro">
-            <h2>Hello, I'm <span class="highlight">Siyumi Dias</span></h2>
+            <h2>Hello, I'm <span id="typed-text" class="highlight"></span></h2>
+            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
             <p>I'm a student at SLIIT City Uni who is passionate about UI/UX design, front-end development, and back-end
                 development. I design UI and UX through interactive wireframes and prototypes to improve user
                 experience.</p>
@@ -39,6 +39,17 @@
             </ul>
         </aside>
     </main>
+
+    <script>
+        var typed = new Typed("#typed-text", {
+            strings: ["Hello, I'm Siyumi Dias"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            startDelay: 500,
+            backDelay: 2000,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
